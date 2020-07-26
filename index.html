@@ -3,10 +3,25 @@
 
 <head>
     <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/69e83ec1a7.js" crossorigin="anonymous"></script>
+</head>
 </head>
 
 <body>
-
+    <div class="main">
+        <h1>TO-DO LIST</h1>
+        <div>
+            <input type="text" name="" id="toDoItem" placeholder="Enter item">
+            <button onclick="addToDo()"><i class="fas fa-plus-square"></i> ADD ITEM</button>
+            <button onclick="deleteAll()"><i class="fas fa-trash-alt"></i> DELETE ALL</button>
+        </div>
+        <div>
+            <ul id="list">
+            </ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
